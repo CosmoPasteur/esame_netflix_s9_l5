@@ -1,6 +1,7 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "../assets/logo.png";
 import { IoSearch } from "react-icons/io5";
+import { IoNotificationsOutline } from "react-icons/io5";
 
 const TopBar = () => {
   return (
@@ -35,7 +36,7 @@ const TopBar = () => {
               <div id="kids" className="fw-bold text-white">
                 KIDS
               </div>
-              <i className="bi bi-bell icons"></i>
+              <IoNotificationsOutline className="icons mx-3 text-white" />
             </div>
           </Navbar.Collapse>
         </Container>
