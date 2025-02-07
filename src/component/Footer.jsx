@@ -1,28 +1,17 @@
 import { Container, Row, Col } from "react-bootstrap";
-// import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="bg-dark text-light py-4">
       <Container fluid className="text-center">
         {/* Social Icons */}
-
-        {/* <Row className="mb-4">
-          <Col>
-            <a href="#" className="text-light mx-2">
-            <FaFacebook size={25} className="footer-icon me-2" />
-            </a>
-            <a href="#" className="text-light mx-2">
-              < className="footer-icon me-2">
-            </a>
-            <a href="#" className="text-light mx-2">
-              < className="fab fa-twitter"/>
-            </a>
-            <a href="#" className="text-light mx-2">
-               <FaYoutube size={25} className="footer-icon" />
-            </a>
-          </Col>
-        </Row> */}
+        <div>
+          <FaFacebook size={25} className="footer-icon me-2" />
+          <FaInstagram size={25} className="footer-icon me-2" />
+          <FaTwitter size={25} className="footer-icon me-2" />
+          <FaYoutube size={25} className="footer-icon" />
+        </div>
 
         <Row>
           {[
