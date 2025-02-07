@@ -29,7 +29,7 @@ const TopBar = () => {
               </Nav.Link>
             </Nav>
             <div className="d-flex align-items-center">
-              <i className="bi bi-search icons "></i>
+              <i className="bi bi-search icons text-white"></i>
               <div id="kids" className="fw-bold text-white">
                 KIDS
               </div>

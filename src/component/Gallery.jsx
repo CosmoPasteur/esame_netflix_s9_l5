@@ -33,10 +33,10 @@ const MovieGallery = ({ title, movieTitles }) => {
                 alt={movie.Title}
                 style={{ height: "180px", objectFit: "cover" }}
               />
-              <Card.Body>
+              {/* <Card.Body>
                 <Card.Title>{movie.Title}</Card.Title>
                 <Card.Text>{movie.Year}</Card.Text>
-              </Card.Body>
+              </Card.Body> */}
             </Card>
           </Col>
         ))}
