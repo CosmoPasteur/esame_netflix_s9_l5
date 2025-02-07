@@ -1,81 +1,63 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="bg-dark text-light py-4">
-      <Container fluid className="d-flex justify-content-center bg-dark text-white">
-        {/* ICONE */}
-        <div>
-          <Row className="mb-3 mt-5">
-            <Col className="text-center">
-              <a href="#" className="text-light mx-2">
-                <i className="fab fa-facebook"></i>
-              </a>
-              <a href="#" className="text-light mx-2">
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a href="#" className="text-light mx-2">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" className="text-light mx-2">
-                <i className="fab fa-youtube"></i>
-              </a>
-            </Col>
-          </Row>
-          <Row className="text-center">
-            <Col md={3}>
-              <a href="#" className="text-light d-block">
-                Audio and Subtitles
-              </a>
-            </Col>
-            <Col md={3}>
-              <a href="#" className="text-light d-block">
-                Media Center
-              </a>
-            </Col>
-            <Col md={3}>
-              <a href="#" className="text-light d-block">
-                Privacy
-              </a>
-            </Col>
-            <Col md={3}>
-              <a href="#" className="text-light d-block">
-                Contact Us
-              </a>
-            </Col>
-          </Row>
-          <Row className="text-center mt-2">
-            <Col md={3}>
-              <a href="#" className="text-light d-block">
-                Audio Description
+      <Container fluid className="text-center">
+        {/* Social Icons */}
+        <Row className="mb-4">
+          <div className="col mb-2">
+            <FaFacebook size={25} className="footer-icon me-2" />
+            <FaInstagram size={25} className="footer-icon me-2" />
+            <FaTwitter size={25} className="footer-icon me-2" />
+            <FaYoutube size={25} className="footer-icon" />
+          </div>
+          {/* <Col>
+            <a href="#" className="text-light mx-2">
+            <FaFacebook size={25} className="footer-icon me-2" />
+            </a>
+            <a href="#" className="text-light mx-2">
+              < className="footer-icon me-2">
+            </a>
+            <a href="#" className="text-light mx-2">
+              < className="fab fa-twitter"/>
+            </a>
+            <a href="#" className="text-light mx-2">
+              < className="fab fa-youtube"/>
+            </a>
+          </Col> */}
+        </Row>
+
+        <Row>
+          {[
+            "Audio and Subtitles",
+            "Media Center",
+            "Privacy",
+            "Contact Us",
+            "Audio Description",
+            "Investor Relations",
+            "Legal Notices",
+            "Help Center",
+            "Gift Cards",
+            "Terms of Use",
+            "Corporate Information",
+            "Cookie Preferences",
+          ].map((text, index) => (
+            <Col key={index} xs={6} md={3} className="mb-2">
+              <a href="#" className="text-light" style={{ textDecoration: "none" }}>
+                {text}
               </a>
             </Col>
-            <Col md={3}>
-              <a href="#" className="text-light d-block">
-                Investor Relations
-              </a>
-            </Col>
-            <Col md={3}>
-              <a href="#" className="text-light d-block">
-                Legal Notices
-              </a>
-            </Col>
-            <Col md={3}>
-              <a href="#" className="text-light d-block">
-                Help Center
-              </a>
-            </Col>
-          </Row>
-        </div>
-      </Container>
-      <Container fluid className="d-flex justify-content-center bg-dark text-white">
-        <Row className="text-center mt-3">
+          ))}
+        </Row>
+
+        <Row className="mt-4">
           <Col>
             <button className="btn btn-outline-light">Service Code</button>
           </Col>
         </Row>
-
-        <Row className="text-center mt-3">
+        <Row className="mt-3">
           <Col>
             <p className="m-0">&copy; 2024 YourCompany, Inc.</p>
           </Col>
