@@ -1,6 +1,6 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "../assets/logo.png";
-import { BiSearch, BiUserCircle } from "react-icons/bi";
+import { IoSearch } from "react-icons/io5";
 
 const TopBar = () => {
   return (
@@ -30,13 +30,12 @@ const TopBar = () => {
               </Nav.Link>
             </Nav>
             <div className="d-flex align-items-center">
-              <BiSearch className="icons me-3" />
+              <IoSearch className="icons me-3 text-white" />
               {/* <i className="bi bi-search icons text-white"></i> */}
               <div id="kids" className="fw-bold text-white">
                 KIDS
               </div>
               <i className="bi bi-bell icons"></i>
-              <BiUserCircle className="icons" />
             </div>
           </Navbar.Collapse>
         </Container>
