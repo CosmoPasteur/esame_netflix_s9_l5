@@ -6,6 +6,7 @@ const Footer = () => {
     <footer className="bg-dark text-light py-4">
       <Container fluid className="text-center">
         {/* Social Icons */}
+
         {/* <Row className="mb-4">
           <Col>
             <a href="#" className="text-light mx-2">
