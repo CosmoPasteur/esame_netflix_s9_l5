@@ -45,27 +45,21 @@ const MovieGallery = ({ title, movieTitles }) => {
   );
 };
 
-const MovieGalleries = () => {
+const Movie = () => {
   return (
     <div className="bg-black text-white py-5">
+      <MovieGallery title="Trending Now" movieTitles={["The Fast and the Furious", "2 Fast 2 Furious", "Fast Five"]} />
       <MovieGallery
-        title="Fast and Furious Saga"
-        movieTitles={["The Fast and the Furious", "2 Fast 2 Furious", "Fast Five"]}
-      />
-      <MovieGallery
-        title="The Lord of the Rings"
+        title="Watch it Again"
         movieTitles={[
           "The Lord of the Rings: The Fellowship of the Ring",
           "The Lord of the Rings: The Two Towers",
           "The Lord of the Rings: The Return of the King",
         ]}
       />
-      <MovieGallery
-        title="The Dark Knight Trilogy"
-        movieTitles={["Batman Begins", "The Dark Knight", "The Dark Knight Rises"]}
-      />
+      <MovieGallery title="New Releases" movieTitles={["Batman Begins", "The Dark Knight", "The Dark Knight Rises"]} />
     </div>
   );
 };
 
-export default MovieGalleries;
+export default Movie;
